@@ -3,10 +3,10 @@ import Container from '@mui/material/Container';
 import "./landing.css";
 // import dp from "./dp.webp";
 import dp1 from "./pic.jpg";
-
+import dp from "./finalpic.jpeg";
 // import dp from "./pic2.png";
 // import dp from "./mypic3.png";
-import dp from "./pic3.png";
+// import dp from "./pic3.png";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import CallIcon from '@mui/icons-material/Call';
