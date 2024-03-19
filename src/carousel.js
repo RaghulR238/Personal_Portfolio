@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './carousel.css';
 import i1 from './website.png';
-import i2 from './textile.jpg';
+// import i2 from './textile.jpg';
+import i2 from './Textilemanagement.png';
 import i3 from './lawnMower.png';
 import portfolioPic from "./portfolioPic.png";
 // import 'font-awesome/css/font-awesome.min.css';
@@ -14,7 +15,8 @@ const slides = [
     description: 'This is slide 1',
     title:'Smart Recipe',
     subtitle:'Mern Project',
-    link:'https://graceful-kleicha-2d0c35.netlify.app/',
+    link1:'https://github.com/RaghulR238/Smart_Recipe_backend',
+    link2:'https://graceful-kleicha-2d0c35.netlify.app/',
     data:"Smart Recipe, a secure MERN project, elevates cooking with Spoonacular API for diverse recipes. MongoDB manages wishlists and user-uploaded recipes, offering a user-friendly platform for culinary enthusiasts."
   },
   {
@@ -22,7 +24,7 @@ const slides = [
     description: 'This is slide 2',
     title:'Textile Management System',
     subtitle:'Java Project',
-    link:'https://shorturl.at/ouDOR',
+    link1:'https://github.com/jothiprax/miniproject/tree/main/717821l238%2C717821l231%2CTEXTILE%20MANAGEMENT/com',
     data: 'Developed and implemented a fully automated Textile Management System encompassing stock management, delivery processes,  billing, calculating wages , streamlining operational efficiency and minimizing manual errors.'
   },
   {
@@ -30,7 +32,8 @@ const slides = [
     description: 'This is slide 2',
     title:'Personal Portfolio',
     subtitle:'React Project',
-    link:'',
+    link1:'https://github.com/RaghulR238/Personal_Portfolio',
+    link2:'https://main--raghul238.netlify.app/',
     data: 'Explore my digital realm – a dynamic portfolio showcasing my journey as a software engineer. This space embodies my proficiency in Java and the MERN stack, offering a glimpse into diverse projects and accomplishments. '
   },
   {
@@ -38,7 +41,8 @@ const slides = [
     description: 'This is slide 3',
     title:'Automatic Lawn Mower',
     subtitle:'Embedded Project',
-    link:'',
+    link1:'https://github.com/RaghulR238/Automatic-LawnMower/tree/main',
+    link2:'',
     data:'Successfully integrated sensor systems for obstacle detection and navigation using Arduino resulting in a reliable and efficient autonomous lawn care solution.'
   },
 ];
@@ -66,9 +70,18 @@ const Slider = () => {
             <h1>{slide.title}</h1>
         <h3>{slide.subtitle}</h3>
         <p>{slide.data}</p>
+        <div>
         <Button onClick={()=>{
-              window.location.href = slide.link;
-            }} >View Project</Button>
+              window.location.href = slide.link1;
+            }} >View Git</Button>
+            {slide.link2&&
+            
+            <Button onClick={()=>{
+              window.location.href = slide.link2;
+            }} >Preview</Button>
+            
+          }
+            </div>
             </div>
               </div>
           </div>

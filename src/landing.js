@@ -54,7 +54,7 @@ import Rightside from './carousel';
 import Blog1 from './carousel';
 import Slider from './carousel';
 import emailjs from '@emailjs/browser';
- 
+ import servlet from './Servlet.png';
 // import Car from './carousel';
 
 
@@ -80,6 +80,7 @@ export default function Landing() {
     { id: 6, name: 'MySQL', logo: i12 },
     { id: 7, name: 'OAuth', logo: i11 },
     { id: 8, name: 'JWT', logo: i13 },
+    {id:9,name:'Servlet JSP',logo:servlet}
     // Add more skills as needed
   ];
 
@@ -318,7 +319,7 @@ export default function Landing() {
             <h2 style={{marginTop:"30px"}}><CallIcon sx={{fontSize:'20px'}}/><span>    </span>Call me</h2>
             <span>+91-9677530199</span>
             <h2><EmailIcon sx={{fontSize:'20px'}}/><span>    </span>  Email</h2>
-            <span>raghulrajan2887@gmail.com</span>
+            <a href="mailto:raghulrajan2887@gmail.com" style={{cursor:'pointer'}}>raghulrajan2887@gmail.com</a>
             <h2><LocationOnIcon sx={{fontSize:'20px'}}/><span>    </span>Location</h2>
             <span>Coimbatore,India</span>
           </div>
@@ -329,12 +330,13 @@ export default function Landing() {
       <label style={{marginBottom:"20px",fontWeight:'bold',fontSize:'20px'}}>Name</label>
       <input style={{width:"200%",height:'40px',marginBottom:"20px"}} type="text"  name="from_name" />
       <label style={{marginBottom:"20px",fontWeight:'bold',fontSize:'20px'}}>Email</label>
+     
       <input style={{width:"200%",height:'40px',marginBottom:"20px"}} type="email" name="from_mail" />
       <label style={{marginBottom:"20px",fontWeight:'bold',fontSize:'20px'}}>Message</label>
       <textarea style={{width:"200%",height:'80px',marginBottom:"20px"}}  name="message" />
       
       <center style={{width:"200%",display:'flex',textAlign:"center",justifyContent:'center'}}>
-        <input style={{border:'none',fontSize:'20px',color:'#2596be'}} type="submit" value="Send"></input>
+        <input style={{border:'none',fontSize:'20px',color:'#2596be',cursor:'pointer'}} type="submit" value="Send"></input>
       <SendIcon sx={{color:'#2596be'}}/> </center>
     </form>
     
