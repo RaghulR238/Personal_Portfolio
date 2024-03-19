@@ -89,7 +89,7 @@ export default function Landing() {
     { id: 5, name: 'Visual Studio Code', logo: i15},
     { id: 2, name: 'Postman', logo: i16 },
     { id: 3, name: 'Netlify', logo: i17 },
-    { id: 4, name: 'FireBase', logo: i18 },
+    // { id: 4, name: 'FireBase', logo: i18 },
     // Add more skills as needed
   ];
 
