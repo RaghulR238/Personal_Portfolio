@@ -4,6 +4,7 @@ import i1 from './website.png';
 // import i2 from './textile.jpg';
 import i2 from './Textilemanagement.png';
 import i3 from './lawnMower.png';
+import i4 from './agro.png';
 import portfolioPic from "./portfolioPic.png";
 // import 'font-awesome/css/font-awesome.min.css';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
@@ -26,6 +27,15 @@ const slides = [
     subtitle:'Java Project',
     link1:'https://github.com/jothiprax/miniproject/tree/main/717821l238%2C717821l231%2CTEXTILE%20MANAGEMENT/com',
     data: 'Developed and implemented a fully automated Textile Management System encompassing stock management, delivery processes,  billing, calculating wages , streamlining operational efficiency and minimizing manual errors.'
+  },
+  {
+    image: i4,
+    description: 'This is slide 2',
+    title:'Agro Assistant',
+    subtitle:'Mern Project',
+    link2:'https://resplendent-marigold-b9eee4.netlify.app/',
+    link1:'https://github.com/RaghulR238/agro_backend',
+    data: 'Agro Assistant is a web platform where users can buy agricultural products and farmers can manage and sell their offerings, featuring secure authentication and complete CRUD operations for seamless interactions.'
   },
   {
     image: portfolioPic,
@@ -92,7 +102,7 @@ const Slider = () => {
         <ArrowBackIosIcon sx={{marginLeft:'5px'}}/>
       </div>
 }
-      {(currentSlide<3)&&
+      {(currentSlide<4)&&
 
       <div className="arrow right" onClick={() => moveToSlide(currentSlide + 1)}>
         <ArrowForwardIosIcon/>
