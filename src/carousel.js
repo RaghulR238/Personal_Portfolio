@@ -17,7 +17,7 @@ const slides = [
     title:'Smart Recipe',
     subtitle:'Mern Project',
     link1:'https://github.com/RaghulR238/Smart_Recipe_backend',
-    link2:'https://graceful-kleicha-2d0c35.netlify.app/',
+    link2:'https://main--symphonious-fenglisu-2be858.netlify.app/',
     data:"Smart Recipe, a secure MERN project, elevates cooking with Spoonacular API for diverse recipes. MongoDB manages wishlists and user-uploaded recipes, offering a user-friendly platform for culinary enthusiasts."
   },
   {
